@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Print message
+      - name: Print Message 
         run: |
           echo "commit message:"
-          git log -l --pretty=%B
+          git log -1 --pretty=%B
